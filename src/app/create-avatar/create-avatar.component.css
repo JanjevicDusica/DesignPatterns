@@ -1,0 +1,91 @@
+.dialog__content {
+  background-color: rgb(48, 116, 253);
+  width: 700px;
+  height: 700px;
+}
+
+.dialog__image {
+  max-width: 600px;
+  max-height: 600px;
+  margin-top: 100px;
+}
+
+.dialog__icon {
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  margin-left: 530px;
+  margin-top: 10px;
+}
+
+.mat-dialog-container {
+  border-radius: 10px;
+  padding: 0px !important;
+  width: 1200px;
+  height: 700px;
+  overflow: hidden;
+}
+
+.dialog__content--title {
+  color: white;
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 70px;
+}
+
+.dialog__content--input {
+  color: white;
+  width: 350px;
+  margin: 15px;
+}
+
+.mat-form-field-ripple {
+  border: white;
+  background-color: white !important;
+}
+
+.mat-form-field-label {
+  color: white !important;
+}
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: white;
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle {
+  color: white;
+  background-color: white;
+}
+
+.mat-radio-label-content {
+  margin-right: 100px;
+}
+
+.mat-select-value-text {
+  color: white;
+}
+
+.dialog__content--button-chat {
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 32px;
+  color: rgb(19, 32, 124);
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 17px;
+  border: 0px;
+  margin-left: 35px;
+}
+
+.dialog__content--button-avatar {
+  margin-top: 30px;
+  background-color: rgb(48, 116, 253);
+  border-radius: 42px;
+  color: white;
+  font-weight: 550;
+  font-size: 15px;
+  border: 1px solid white;
+  margin-left: 35px;
+  letter-spacing: 1px;
+}

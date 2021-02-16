@@ -1,0 +1,8 @@
+<div class="dashboard" fxLayout="column" fxLayoutAlign="center center">
+    <h1 class="dashboard__title">Let's chat</h1>
+    <div class="dashboard__content" fxLayout="row wrap"fxLayoutAlign="space-evenly center" >
+        <div *ngFor="let avatar of this.avatars;" >
+             <app-chat-card fxFlex="1 0 auto" [avatar]="avatar"></app-chat-card>
+        </div>
+    </div>
+</div>

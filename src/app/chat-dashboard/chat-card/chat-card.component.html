@@ -1,0 +1,21 @@
+<div class="card"  fxLayout="row" fxLayoutAlign="start stretch">
+    <div class="card__avatar" fxFlex="30" fxLayout="column" fxLayoutAlign="start center">
+        <span class="card__avatar--name">{{this?.avatar.fullName}}</span>
+        <img class="card__avatar--img" src="./assets/images/{{this.avatar.imagePath}}">
+        <span  class="card__avatar--nickname">{{this.avatar.nickname}}</span>
+    </div>
+    <div class="card__chat" fxFlex fxLayout="column" fxLayoutAlign="start center">
+        <div class="card__chat--messages" >
+            <div *ngFor="let message of this.messages;">
+                <app-message [myMessage]="this.isThisMyMessage(message)" [message]="message"></app-message>
+            </div>     
+        </div>
+        <mat-form-field appearance="outline" class="card__chat--input">
+            <input matInput placeholder="Message ..." [(ngModel)]="this.message">
+            <div matSuffix fxLayout="row" fxLayoutAlign="start center">
+                <mat-icon class="card__chat--input-icon" (click)="this.send()">send</mat-icon>
+                <!-- <mat-icon class="card__chat--input-icon" (click)="this.forward()">forward</mat-icon> -->
+            </div>
+          </mat-form-field>
+    </div>
+</div>

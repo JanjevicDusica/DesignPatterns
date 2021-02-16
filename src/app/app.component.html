@@ -1,0 +1,14 @@
+<div *ngIf="this.createAvatar">
+    <app-chat-dashboard ></app-chat-dashboard>
+</div>
+<div *ngIf="!this.createAvatar">
+    <div class="container"  fxLayout="row" fxLayoutAlign="center center">
+        <div class="container__content" fxFlex  fxLayout="column" fxLayoutAlign="center start">
+            <span class="container__content--title"> App Chat</span>
+            <button  mat-flat-button (click)="this.onCreateAvatar()" class="container__content--button"> {{this.createAvatarBtnTitle}}</button>
+            <!-- <span class="container__content--description">Simple Chat application with design patterns</span> -->
+        </div>
+        <img src="./assets/images/chat.jpg" fxFlex="50">
+    </div>
+    
+</div>

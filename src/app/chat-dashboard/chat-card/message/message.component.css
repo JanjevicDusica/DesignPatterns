@@ -1,0 +1,32 @@
+.message-my {
+  background-color: rgb(68, 37, 199);
+  color: white;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px 5px 5px 20px;
+}
+
+.message-other {
+  margin: 10px 20px 5px 5px;
+}
+
+.message-other__content {
+  background-color: rgb(145, 201, 243);
+  color: white;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.message-other__avatar--name {
+  color: grey;
+  font-size: 15px;
+}
+
+.message-other__avatar--img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}

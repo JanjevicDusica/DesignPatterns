@@ -1,0 +1,72 @@
+.card {
+  margin: 30px;
+  height: 300px;
+  width: 600px;
+  border-radius: 7px;
+  box-shadow: 5px 4px 24px -8px rgba(41, 126, 171, 0.99);
+}
+
+.card__avatar {
+  background: linear-gradient(rgb(145, 202, 243), rgb(64, 27, 196));
+}
+
+.card__avatar--name {
+  margin-top: 40px;
+  font-size: 21px;
+  font-weight: 550;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.card__avatar--img {
+  margin-top: 25px;
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+}
+
+.card__avatar--nickname {
+  margin-top: 25px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: ivory;
+}
+
+.card__chat--input {
+  width: 93%;
+}
+
+.card__chat--input-icon {
+  color: rgb(64, 27, 196);
+  cursor: pointer;
+}
+
+.card__chat--messages {
+  border: 1px solid rgb(214, 214, 214);
+  min-width: 92%;
+  min-height: 196px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

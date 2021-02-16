@@ -1,0 +1,10 @@
+<div class="message-my" *ngIf="this.myMessage">
+    {{this.message.message}} 
+</div>
+<div *ngIf="!this.myMessage" class="message-other" fxLayout="column" fxLayoutAlign="start stretch">
+    <div  class="message-other__avatar" fxLayout="row" fxLayoutAlign="start center">
+        <img  class="message-other__avatar--img" src="./assets/images/{{this.message.sender.imagePath}}">
+        <span class="message-other__avatar--name"> {{this.message.sender.fullName}}</span>
+    </div>
+    <div class="message-other__content">{{this.message.message}}</div>
+</div>
